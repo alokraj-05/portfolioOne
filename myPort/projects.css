@@ -1,0 +1,138 @@
+@import url(style.css);
+@import url(about.css);
+
+
+img {
+  border-radius: 8px;
+}
+
+.hero-main {
+  width: 100%;
+  display: flex;
+}
+
+.lhs {
+  width: 65%;
+}
+
+.left {
+  position: relative;
+  padding-right: 3rem;
+  font-size: 8rem;
+  font-weight: 900;
+  font-family: var(--heading-font);
+  opacity: 1;
+  -webkit-text-stroke: 2px var(--heading-color-);
+}
+
+
+ul li {
+  list-style-type: none;
+}
+
+.left {
+  /* width: 50%; */
+  position: fixed;
+  transform: skew(10deg, 10deg);
+}
+
+.left ul li {
+  color: var(--heading-color-);
+  cursor: pointer;
+  transition: 100ms all ease-in-out;
+}
+
+.left ul li:hover {
+  color: transparent;
+  transform: scale(1.1) translate(3rem, 0);
+}
+
+.one {
+  left: 2rem;
+  top: 6rem;
+  transform: skewY(10deg, 10deg);
+}
+
+
+.two {
+  left: 2rem;
+  top: 12rem;
+  transform: skewY(10deg, 10deg);
+}
+
+.three {
+  left: 2rem;
+  top: 18rem;
+  transform: skewY(10deg, 10deg);
+}
+
+.four {
+  left: 2rem;
+  top: 24rem;
+  transform: skewY(10deg, 10deg);
+}
+
+.five {
+  left: 2rem;
+  top: 30rem;
+  transform: skewY(10deg, 10deg);
+}
+
+.six {
+  left: 2rem;
+  top: 36rem;
+  transform: skewY(10deg, 10deg);
+}
+
+.seven {
+  left: 2rem;
+  top: 42rem;
+  transform: skewY(10deg, 10deg);
+}
+
+.right {
+  text-align: right;
+  width: 35%;
+}
+
+.elements {
+  /* width: 50%; */
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.right .elements ul li {
+  text-align: left;
+  padding: 2rem 2rem 2rem 3rem;
+  border-radius: 8px;
+  transition: 200ms all ease-in-out;
+  border-top: 1px solid transparent;
+  /* font-family: var(--text-font); */
+}
+
+.elements ul li:hover {
+  background-color: var(--background-color-);
+  border-top: 1px solid var(--heading-color-);
+}
+
+
+
+.elements ul li a {
+  font-weight: 600;
+  font-family: var(--keywords-font);
+}
+
+.elements ul li a img {
+  width: 90%;
+  height: auto;
+  background-size: cover;
+  padding: 1rem 0;
+  border-radius: 8px;
+  transform: translate(20px, 0px);
+}
+
+.elements ul li p {
+  font-family: var(--text-font);
+  font-weight: 100;
+}

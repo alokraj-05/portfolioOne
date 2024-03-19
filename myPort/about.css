@@ -1,0 +1,169 @@
+@import url(style.css);
+
+* {
+  margin: 0;
+}
+
+body {
+  padding: 0 18rem;
+}
+
+body,
+html {
+  z-index: -10;
+}
+
+body {
+  background: var(--background-image-);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  background-attachment: fixed;
+  z-index: -9;
+}
+
+.exp {
+  /* content: ""; */
+  display: inline-block;
+  position: fixed;
+  font-size: 18rem;
+  left: 0.01%;
+  bottom: 10px;
+  opacity: 0.1;
+  font-family: var(--heading-font);
+  line-height: 15rem;
+  user-select: none;
+  z-index: -3;
+  transition: none;
+}
+
+.hero {
+  padding-left: 5rem;
+}
+
+.aboutme {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+}
+
+.timeline {
+  z-index: 10;
+}
+
+.timeline ul li {
+  list-style: none;
+  font-family: var(--text-font);
+  padding-left: 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  /* display: inline-block; */
+  z-index: 11;
+  color: var(--heading-color-);
+}
+
+.timeline::before {
+  content: "";
+  width: 1px;
+  height: 46.9rem;
+  position: absolute;
+  transform: translate(0px, 16px);
+  background-color: var(--text-color-);
+  opacity: .5;
+  display: inline-block;
+}
+
+.timeline ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--heading-color-);
+  /* mix-blend-mode: exclusion; */
+  opacity: 1;
+  display: inline-block;
+  outline: 2px solid var(--heading-color-);
+  transform: translate(-23.5px, 8px);
+}
+
+.timeline ul li p {
+  font-size: 1rem;
+  font-family: var(--keywords-font);
+  font-weight: 300;
+  margin-top: .8rem;
+}
+
+
+.button {
+  background-color: transparent;
+  z-index: 1000;
+  font-family: var(--heading-font);
+  padding: 10px 1rem;
+  border: 2px solid var(--text-color-);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 2rem;
+  transition: 150ms all ease-in-out;
+}
+
+.button a,
+i {
+  color: var(--text-color-);
+}
+
+.button:hover {
+  transform: scale(1.08);
+}
+
+@media only screen and (max-width:1350px) {
+  body {
+    padding: 0 10rem;
+  }
+
+  .exp {
+    font-size: 15rem;
+  }
+
+  .timeline::before {
+    /* height: 50.5rem; */
+  }
+}
+
+@media only screen and (max-width:1025px) {
+  body {
+    padding: 0 7rem;
+  }
+
+  .exp {
+    font-size: 13rem;
+  }
+
+  .aboutme {
+    font-size: 2.2rem;
+  }
+
+  .timeline::before {
+    height: 56rem;
+  }
+}
+
+@media only screen and (max-width:769px) {
+  body {
+    padding: 0 4rem;
+  }
+
+  .exp {
+    font-size: 9.5rem;
+  }
+
+  .aboutme {
+    font-size: 2.2rem;
+  }
+
+  .timeline::before {
+    height: 61rem;
+  }
+}
