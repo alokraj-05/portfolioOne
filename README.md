@@ -6,7 +6,7 @@ Welcome to my portfolio on GitHub! This portfolio showcases a collection of my p
 
 ![porfolio_1](https://github.com/alokraj-05/protfolio-1/assets/121685233/8ba63ccb-bf12-46fc-b050-6b9b229d5462)
 
-![preview](https://portfolio-one-eight-eta.vercel.app/)
+[preview](https://portfolio-one-eight-eta.vercel.app/)
 
 ## 🧰 Features
 
